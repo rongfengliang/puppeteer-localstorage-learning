@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer-core");
 (async () => {
   const browser = await puppeteer.connect({
-    browserWSEndpoint: "ws://localhost:3000",
+    browserWSEndpoint: "ws://localhost:3000/chrome",
   });
   const page = await browser.newPage();
   await page.goto("http://nginx", { waitUntil: "networkidle2" });
