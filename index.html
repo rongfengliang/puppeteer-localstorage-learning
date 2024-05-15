@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage teset</title>
+     <script >
+
+        function demo(){
+            let local_name = localStorage.getItem("name");
+            alert(local_name);
+        }
+
+     </script>
+</head>
+<body>
+    
+  <div> 
+      <input type="button" value="set" id="set"  onclick="demo()"/>
+  </div>
+
+</body>
+</html>

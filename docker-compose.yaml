@@ -1,0 +1,12 @@
+version: "3"
+services:
+  nginx:
+    image: nginx:alpine
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+    ports:
+      - "80:80"
+  browser:
+    image: browserless/chrome:latest
+    ports:
+      - "3000:3000"
