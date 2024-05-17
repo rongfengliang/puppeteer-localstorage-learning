@@ -7,6 +7,6 @@ services:
     ports:
       - "80:80"
   browser:
-    image: ghcr.io/browserless/chrome:latest
+    image: ghcr.io/browserless/chromium:latest
     ports:
       - "3000:3000"
